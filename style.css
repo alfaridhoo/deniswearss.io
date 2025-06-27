@@ -576,6 +576,16 @@ main.container {
 .social-icon-link:hover .social-hover-text {
     opacity: 1;
 }
+/* ...existing code... */
+main {
+    padding-top: 90px; /* Atur sesuai tinggi header-mu */
+}
+@media (max-width: 576px) {
+    main {
+        padding-top: 70px;
+    }
+}
+/* ...existing code... */
 /* ===================== PAYMENT PAGE STYLES ===================== */
 
 /* Container spacing agar tidak menabrak navbar */
@@ -785,7 +795,7 @@ textarea.custom-input {
 }
 
 .mission-content {
-    background: linear-gradient(135deg, #6364645b 0%, #3d3b3d 100%);
+    background: linear-gradient(135deg, #92939460 0%, #10144660 50%, #1615163d 100%);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
