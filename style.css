@@ -585,10 +585,8 @@ main {
         padding-top: 70px;
     }
 }
-/* ...existing code... */
 /* ===================== PAYMENT PAGE STYLES ===================== */
 
-/* Container spacing agar tidak menabrak navbar */
 main.container {
     margin-top: 100px;
 }
@@ -628,7 +626,7 @@ main.container {
 #ewalletForm .form-check.card:hover,
 #ewalletForm .form-check.card input:checked ~ i {
     border-color: #06b323;
-    box-shadow: 0 0 0 2px #08bd0133;
+    box-shadow: 0 0 0 2px #6a6b6a33;
 }
 
 #ewalletForm .form-check.card input:checked ~ .fw-semibold {
@@ -647,14 +645,125 @@ main.container {
     background: linear-gradient(90deg, #686de0, #4834d4);
     color: #fff;
 }
+       /* ===================== PAYMENT PAGE DARK SOFT GRADIENT ===================== */
+.card.bg-dark,
+.card.bg-dark .payment-option,
+.card.bg-dark #ewalletForm .form-check.card {
+    background: linear-gradient(135deg, #23272b 60%, #353a40 100%) !important;
+    color: #f1f1f1 !important;
+    border: 1.5px solid #353a40;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10) !important;
+}
+
+.card.bg-dark .form-label,
+.card.bg-dark .fw-semibold,
+.card.bg-dark .text-dark {
+    color: #f1f1f1 !important;
+}
+
+.card.bg-dark .form-control,
+.card.bg-dark .form-select {
+    background: linear-gradient(135deg, #23272b 60%, #353a40 100%);
+    color: #f1f1f1;
+    border-color: #353a40;
+}
+
+.card.bg-dark .form-control:focus,
+.card.bg-dark .form-select:focus {
+    background: #23272b;
+    color: #fff;
+    border-color: #0d6efd;
+}
+
+.card.bg-dark .input-group-text {
+    background: #23272b;
+    color: #f1f1f1;
+    border-color: #353a40;
+}
+
+.card.bg-dark .list-group-item {
+    background: linear-gradient(135deg, #23272b 60%, #353a40 100%);
+    color: #f1f1f1;
+    border-color: #353a40;
+}
+
+.card.bg-dark .alert-info {
+    background: linear-gradient(135deg, #23272b 60%, #353a40 100%);
+    color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.card.bg-dark .alert-success {
+    background: linear-gradient(135deg, #1e2a1e 60%, #23272b 100%);
+    color: #6fdc8c;
+    border-color: #6fdc8c;
+}
+.card.bg-dark .alert-warning {
+    background: linear-gradient(135deg, #2d2a1e 60%, #353a40 100%);
+    color: #ffc107;
+    border-color: #ffc107;
+}
+.card.bg-dark .alert {
+    border-radius: 0.75rem;
+}
+
+.card.bg-dark .btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+    background: transparent;
+}
+.card.bg-dark .btn-outline-primary:hover,
+.card.bg-dark .btn-outline-primary:focus {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.card.bg-dark .btn-gradient-primary {
+    background: linear-gradient(90deg, #3a6ff7 60%, #6e48aa 100%);
+    color: #fff;
+    border: none;
+}
+.card.bg-dark .btn-gradient-primary:hover,
+.card.bg-dark .btn-gradient-primary:focus {
+    background: linear-gradient(90deg, #6e48aa 0%, #3a6ff7 100%);
+    color: #fff;
+}
+
+.card.bg-dark .payment-option,
+.card.bg-dark #ewalletForm .form-check.card {
+    background: linear-gradient(135deg, #23272b 60%, #353a40 100%) !important;
+    color: #f1f1f1 !important;
+    border: 1.5px solid #353a40;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.card.bg-dark .payment-option:hover,
+.card.bg-dark .payment-option input:checked + i,
+.card.bg-dark .payment-option input:checked ~ .fw-semibold,
+.card.bg-dark #ewalletForm .form-check.card:hover,
+.card.bg-dark #ewalletForm .form-check.card input:checked ~ i {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px #0d6efd33;
+}
+.card.bg-dark .payment-option input:checked ~ i,
+.card.bg-dark #ewalletForm .form-check.card input:checked ~ i {
+    color: #0d6efd !important;
+}
+.card.bg-dark .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* E-Wallet khusus: hijau saat aktif */
+.card.bg-dark #ewalletForm .form-check.card:hover,
+.card.bg-dark #ewalletForm .form-check.card input:checked ~ i {
+    border-color: #06b323;
+    box-shadow: 0 0 0 2px #08bd0133;
+}
+.card.bg-dark #ewalletForm .form-check.card input:checked ~ .fw-semibold {
+    color: #06b323 !important;
+}
 
 /* Responsive */
 @media (max-width: 576px) {
-    main.container {
-        margin-top: 80px;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
     .card-body.p-5 {
         padding: 1.5rem !important;
     }
